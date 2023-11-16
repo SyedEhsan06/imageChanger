@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 120vh;
+    height: 90vh;
+    display: flex;
+    border:none;
+    border-radius: 20%;
+}
+.imgContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+.textContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 20%;
+    flex-direction: column;
+    align-items: center;
+    gap: 29%;
+    justify-content: flex-start;
+    text-align: center;
+    cursor: pointer;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.text {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+#img1{
+visibility: visible;
+}
+.progress{
+    margin: 2px;
+    width: 4px;
+    display: flex;
+    height: 100%;
+    gap: 10%;
+    flex-direction: column;
+}
+.e1 {
+    width: 100%;
+    height: 25%;
+    background-color: gray;
+    transition: margin-top 0.5s ease-in-out;
+}
+.line {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    transition: height 0.5s all ;
+}
