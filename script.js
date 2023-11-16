@@ -42,6 +42,7 @@ textContainer.addEventListener('click', (e) => {
     indexOfimg = index;
   
     elem[0].style.marginTop = `${(index-1) * 33}vh`;
+    progress.style.height = `100%`;
     imgContainer.firstElementChild.attributes.src.value = images[index - 1];
     Array.from(textContainer.children).forEach((child) => {
       child.children[1].innerHTML = "";
