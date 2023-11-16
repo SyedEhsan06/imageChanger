@@ -13,17 +13,27 @@ let height = 0;
 var time = 0;
 
 function changeImage() {
+    indexOfimg++;
   if (indexOfimg == images.length) {
     indexOfimg = 0;
   }
 
   elem[0].style.marginTop = `${indexOfimg * 5}vh`;
+  if (indexOfimg==0) {
+  elem[0].style.height = `15%`;
+  }
+  else if(indexOfimg==1){
+    elem[0].style.height = `16%`;
+  }
+  else{
+  elem[0].style.height = `17%`;
+
+  }
   imgContainer.firstElementChild.attributes.src.value = images[indexOfimg];
   imgContainer.firstElementChild.attributes.style.value = `animation: fade 1s ease-in-out;opacity: 1;`;
   let previousIndex = indexOfimg - 1 < 0 ? images.length - 1 : indexOfimg - 1;
   textContainer.children[previousIndex].children[1].innerHTML = "";
   textContainer.children[indexOfimg].children[1].innerHTML = text[indexOfimg];
-  indexOfimg++;
 }
 
 var prointerval = setInterval(() => {
