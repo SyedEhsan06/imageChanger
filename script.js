@@ -17,8 +17,9 @@ function changeImage() {
     indexOfimg = 0;
   }
 
-  elem[0].style.marginTop = `${indexOfimg * 33}vh`;
+  elem[0].style.marginTop = `${indexOfimg * 5}vh`;
   imgContainer.firstElementChild.attributes.src.value = images[indexOfimg];
+  imgContainer.firstElementChild.attributes.style.value = `animation: fade 1s ease-in-out;opacity: 1;`;
   let previousIndex = indexOfimg - 1 < 0 ? images.length - 1 : indexOfimg - 1;
   textContainer.children[previousIndex].children[1].innerHTML = "";
   textContainer.children[indexOfimg].children[1].innerHTML = text[indexOfimg];
@@ -41,7 +42,7 @@ textContainer.addEventListener('click', (e) => {
     let index = e.target.parentElement.children[1].attributes.id.value;
     indexOfimg = index;
   
-    elem[0].style.marginTop = `${(index-1) * 33}vh`;
+    elem[0].style.marginTop = `${(index-1) * 5}vh`;
     progress.style.height = `100%`;
     imgContainer.firstElementChild.attributes.src.value = images[index - 1];
     Array.from(textContainer.children).forEach((child) => {
