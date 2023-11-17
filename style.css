@@ -31,6 +31,7 @@ html , body{
     transition: opacity 1s ease-in-out;
 }
 .textContainer{
+    gap: 44px;
     width: 50%;
     height: 100%;
     display: flex;
@@ -64,26 +65,42 @@ visibility: visible;
 }
 .progress{
     margin: 2px;
-    width: 5px;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
+    width: 7px;
+    height: 22%;
     border-radius:30px ;
-    margin-top: 29%;
     transition: height all 0.7s ease;
-    
 }
 .e1 {
     width: 100%;
-    height: 14%;
-    background-color: wheat;
+    height: 100%;
+    background-color: rgb(252, 209, 131);
     border-radius:30px ;
     transition: margin-top 0.8s ease-in-out;
 }
 .line {
     width: 100%;
-    height: 20%;
+    height: 3%;
     border-radius:30px ;
     background-color:rgb(0, 110, 255);
     transition: height 0.5s all ;
+}
+.progressContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 23%;
+}
+
+.h11{
+    margin-bottom: 3%;
+}
+.h12{
+    margin-bottom: 4%;
+}
+.h13{
+    margin-bottom: 8%;
+}
+.e1{
+    transition: opacity 0.9s ease-in-out;
 }
