@@ -78,7 +78,7 @@ visibility: visible;
     height: 14%;
     background-color: wheat;
     border-radius:30px ;
-    transition: margin-top 1s ease-in-out;
+    transition: margin-top 0.8s ease-in-out;
 }
 .line {
     width: 100%;
