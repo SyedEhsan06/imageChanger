@@ -44,8 +44,9 @@ textContainer.addEventListener('click', (e) => {
     clearInterval(prointerval);
     let index = e.target.parentElement.children[1].attributes.id.value;
     indexOfimg = index;
-  
     progress.forEach((el)=>el.style.height="0%")
+    elem.forEach((elem)=>elem.style.opacity=0)
+    elem[indexOfimg-1].style.opacity=1
     progress[indexOfimg-1].style.height = `100%`;
     imgContainer.firstElementChild.attributes.src.value = images[index - 1];
     Array.from(textContainer.children).forEach((child) => {
